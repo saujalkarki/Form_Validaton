@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(84, 83, 153);
+  font-size: 1.2em;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.form {
+  border: 2px solid black;
+  padding: 1em;
+  border-radius: 19px;
+}
+
+h1 {
+  font-family: "Shadows Into Light", cursive;
+}
+
+label,
+button {
+  font-family: "Open Sans", sans-serif;
+  display: block;
+}
+
+button {
+  border-radius: 6px;
+}
+
+input,
+button {
+  font-size: 1em;
+  padding: 3px;
+}
