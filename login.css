@@ -4,4 +4,69 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  max-width: 90vw;
+  padding: 2em;
+  border: 0 solid black;
+  border-radius: 9px;
+  box-shadow: -5px -5px 20px 8px rgba(75, 73, 73, 0.5);
+}
+
+.container h1 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+label {
+  font-size: larger;
+  font-weight: bold;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+input {
+  padding: 0.8rem 1rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+#Email {
+  text-transform: lowercase;
+}
+
+.loginBtn {
+  background-color: rgb(196, 196, 196);
+  width: 100%;
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+  font-size: larger;
+  font-weight: bolder;
+  padding: 0.8em;
+  transition: 500ms ease-in-out;
+}
+
+.loginBtn:hover {
+  background-color: black;
+  color: white;
 }
