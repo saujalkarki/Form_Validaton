@@ -11,14 +11,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .container {
-  /* max-width: 85vw; */
-  /* width: 80vw;  */
+  min-width: 85vw;
   padding: 1em;
-  border: 0 solid sblack;
+  border: 0 solid black;
   border-radius: 9px;
   box-shadow: -5px -5px 20px 8px rgba(75, 73, 73, 0.5);
 }
@@ -66,7 +65,43 @@ input {
   transition: 500ms ease-in-out;
 }
 
+.registerBtn a {
+  text-decoration: none;
+  color: black;
+}
+
 .registerBtn:hover {
   background-color: black;
+}
+
+.registerBtn:hover a {
   color: white;
+}
+
+.forwardPage {
+  display: flex;
+  justify-content: center;
+  padding: 0.5em 0 0 0;
+}
+
+.forwardPageA {
+  color: black;
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .container {
+    min-width: 60vw;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+  .container {
+    min-width: 50vw;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    min-width: 30vw;
+  }
 }

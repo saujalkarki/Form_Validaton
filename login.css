@@ -11,43 +11,38 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .container {
-  max-width: 90vw;
-  padding: 2em;
+  min-width: 80vw;
+  padding: 1.5em;
   border: 0 solid black;
   border-radius: 9px;
   box-shadow: -5px -5px 20px 8px rgba(75, 73, 73, 0.5);
 }
 
-.container h1 {
+.container h2 {
   text-align: center;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  gap: 1em;
-}
-
-label {
-  font-size: larger;
-  font-weight: bold;
+  gap: 0.6em;
 }
 
 .inputs {
   display: flex;
   flex-direction: column;
-  gap: 0.7rem;
+  gap: 0.3rem;
 }
 
 input {
-  padding: 0.8rem 1rem;
+  padding: 0.4rem 0.5rem;
   border: 1px solid black;
   border-radius: 5px;
-  font-size: 1em;
+  font-size: 0.8em;
 }
 
 #Email {
@@ -60,13 +55,41 @@ input {
   border: none;
   border-radius: 9px;
   cursor: pointer;
-  font-size: larger;
-  font-weight: bolder;
-  padding: 0.8em;
+  font-size: medium;
+  font-weight: lighter;
+  padding: 0.45em;
   transition: 500ms ease-in-out;
 }
 
 .loginBtn:hover {
   background-color: black;
   color: white;
+}
+
+.forwardPage {
+  display: flex;
+  justify-content: center;
+  padding: 0.5em 0 0 0;
+}
+
+.forwardPageA {
+  color: black;
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  .container {
+    min-width: 55vw;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+  .container {
+    min-width: 30vw;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    min-width: 25vw;
+  }
 }
