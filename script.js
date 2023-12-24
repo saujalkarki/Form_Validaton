@@ -113,9 +113,8 @@ if (window.location.pathname.split("/").pop() === "register.html") {
               "registerConfirmPassword",
               registerConfirmPassword.value
             );
+            window.location.href = "login.html";
           }
-
-          window.location.href = "login.html";
         }
       }
     }
